@@ -375,7 +375,11 @@ h1, .feature h2 {
   stroke-dashoffset: calc(100 - var(--sweep, 100));
 }
 
-.signal-circle .icon { width: 26px; height: 26px; }
+.signal-circle .icon {
+  width: 22px;
+  height: 22px;
+  color: var(--grey-300); /* icons grey; the ring keeps the signal color */
+}
 
 .signal-red    { color: var(--red-500); }
 .signal-yellow { color: var(--yellow-500); }
