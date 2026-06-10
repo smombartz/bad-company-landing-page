@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bad Company — An advocate that works for the consumer</title>
+  <meta name="description" content="Bad Company is a Chrome extension that rides along on any shopping page and tells you who you are really buying from. Live rating, right where you shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <a href="#top" class="header-logo" aria-label="Bad Company — back to top">
+      <img src="assets/logo.png" alt="Bad Company" width="160">
+    </a>
+    <a class="btn btn-cta btn-small js-cta" href="#" target="_blank" rel="noopener">
+      <span class="icon icon-chrome" aria-hidden="true"></span>
+      Add to Chrome
+    </a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="icon icon-thumbs-up eyebrow-icon" aria-hidden="true"></span>
+          On the consumer&rsquo;s side
+        </p>
+        <h1>An <em class="accent">advocate</em> that works for the consumer&nbsp;&mdash; not the companies selling to&nbsp;you.</h1>
+        <p class="subline">A second opinion that rides along on any shopping page and tells you who you are really buying&nbsp;from.</p>
+        <div class="cta-row">
+          <a class="btn btn-cta js-cta" href="#" target="_blank" rel="noopener">
+            <span class="icon icon-chrome" aria-hidden="true"></span>
+            Add to Chrome <span class="cta-note">&mdash; it&rsquo;s free</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ============ Report panel (rebuilt from the extension UI) ============ -->
+      <div class="hero-visual reveal">
+        <div class="panel" id="report-panel">
+          <div class="panel-tabs">
+            <span class="tab tab-active">Report</span>
+            <span class="tab">History</span>
+          </div>
+          <div class="panel-heading">
+            <h2 class="panel-title">Tesla Inc.</h2>
+            <p class="panel-domain">tesla.com</p>
+          </div>
+          <div class="flags">
+            <span class="flags-label">Strong data coverage</span>
+            <div class="signal" style="--d: 0ms">
+              <span class="signal-circle signal-red">
+                <svg class="signal-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" pathLength="100"/></svg>
+                <span class="icon icon-cart" aria-hidden="true"></span>
+              </span>
+              <span class="signal-label">Buy less<br>stuff</span>
+            </div>
+            <div class="signal" style="--d: 120ms">
+              <span class="signal-circle signal-yellow">
+                <svg class="signal-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" pathLength="100"/></svg>
+                <span class="icon icon-monitor-no-entry" aria-hidden="true"></span>
+              </span>
+              <span class="signal-label">Don&rsquo;t get scammed</span>
+            </div>
+            <div class="signal" style="--d: 240ms">
+              <span class="signal-circle signal-green">
+                <svg class="signal-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" pathLength="100"/></svg>
+                <span class="icon icon-heart" aria-hidden="true"></span>
+              </span>
+              <span class="signal-label">Shop your values</span>
+            </div>
+          </div>
+          <div class="rating-row">
+            <span>Do you agree with this rating?</span>
+            <button class="thumb" aria-label="Agree with rating">
+              <span class="icon icon-thumbs-up-rating" aria-hidden="true"></span>
+            </button>
+            <button class="thumb" aria-label="Disagree with rating">
+              <span class="icon icon-thumbs-down-rating" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="panel-section">
+            <button class="section-heading" data-toggle="summary-body" aria-expanded="true">
+              Summary
+              <span class="icon caret" aria-hidden="true"></span>
+            </button>
+            <div class="section-body" id="summary-body">
+              <div class="subsection">
+                <p class="subsection-heading">Overview
+                  <span class="icon caret caret-small" aria-hidden="true"></span>
+                </p>
+                <p class="subsection-text">Tesla, Inc. receives a D grade due to serious regulatory actions, product safety investigations, and labour discrimination allegations. California authorities ruled Tesla's 'Autopilot' and 'Full Self-Driving' terms misleading and ordered removal from marketing materials.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel-section">
+            <button class="section-heading" aria-expanded="false">
+              Categories
+              <span class="icon caret" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <p class="panel-tagline">Live rating, right where you shop</p>
+      </div>
+    </section>
+
+    <!-- ============ Feature: public record ============ -->
+    <section class="feature">
+      <div class="feature-copy reveal">
+        <p class="eyebrow">
+          <span class="icon icon-monitor-alert eyebrow-icon" aria-hidden="true"></span>
+          Backed by the public record
+        </p>
+        <h2>Quickly see where you might want to <em class="accent">pause before buying</em>.</h2>
+        <p class="subline">Category risk scores and concerning issues &mdash; each linked to court filings, regulators and reporting you can check yourself.</p>
+      </div>
+      <div class="feature-visual reveal">
+        <div class="panel panel-evidence">
+          <p class="evidence-title">Events</p>
+          <ul class="evidence-list">
+            <li class="evidence-item" style="--d: 0ms">
+              <span class="dot dot-red"></span>
+              <span class="evidence-text">CFPB enforcement action over loan terms</span>
+              <a class="evidence-source" href="#" onclick="return false">Court filing<span class="icon icon-external" aria-hidden="true"></span></a>
+            </li>
+            <li class="evidence-item" style="--d: 100ms">
+              <span class="dot dot-red"></span>
+              <span class="evidence-text">Misleading &lsquo;Full Self-Driving&rsquo; marketing ruling</span>
+              <a class="evidence-source" href="#" onclick="return false">Regulator<span class="icon icon-external" aria-hidden="true"></span></a>
+            </li>
+            <li class="evidence-item" style="--d: 200ms">
+              <span class="dot dot-yellow"></span>
+              <span class="evidence-text">Product safety investigations, multiple recalls</span>
+              <a class="evidence-source" href="#" onclick="return false">Reporting<span class="icon icon-external" aria-hidden="true"></span></a>
+            </li>
+            <li class="evidence-item" style="--d: 300ms">
+              <span class="dot dot-yellow"></span>
+              <span class="evidence-text">Labour discrimination lawsuits at facilities</span>
+              <a class="evidence-source" href="#" onclick="return false">Court filing<span class="icon icon-external" aria-hidden="true"></span></a>
+            </li>
+            <li class="evidence-item" style="--d: 400ms">
+              <span class="dot dot-green"></span>
+              <span class="evidence-text">Trade &amp; sanctions compliance</span>
+              <span class="evidence-source evidence-ok">No issues found</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Feature: three signals ============ -->
+    <section class="feature feature-flip">
+      <div class="feature-copy reveal">
+        <p class="eyebrow">
+          <span class="icon icon-flag eyebrow-icon" aria-hidden="true"></span>
+          Three signals
+        </p>
+        <h2>Don&rsquo;t get scammed. <em class="accent">Shop your values.</em> Buy&nbsp;less.</h2>
+        <p class="subline">Transparently sourced signals to inform your shopping choices.</p>
+      </div>
+      <div class="feature-visual reveal">
+        <div class="pillars">
+          <div class="pillar" style="--d: 0ms">
+            <span class="signal-circle signal-yellow">
+              <svg class="signal-ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="24" pathLength="100"/></svg>
+              <span class="icon icon-monitor-no-entry" aria-hidden="true"></span>
+            </span>
+            <p class="pillar-label">Don&rsquo;t get scammed</p>
+            <div class="pills">
+              <span class="pill pill-red">Hidden fees</span>
+              <span class="pill pill-red">Refund issues</span>
+              <span class="pill pill-yellow">Product safety</span>
+              <span class="pill pill-yellow">Marketing claims</span>
+            </div>
+          </div>
+          <div class="pillar" style="--d: 140ms">
+            <span class="signal-circle signal-green">
+              <svg class="signal-ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="24" pathLength="100"/></svg>
+              <span class="icon icon-heart" aria-hidden="true"></span>
+            </span>
+            <p class="pillar-label">Shop your values</p>
+            <div class="pills">
+              <span class="pill pill-green">Greenwashing</span>
+              <span class="pill pill-green">Labour</span>
+              <span class="pill pill-yellow">Environment</span>
+              <span class="pill pill-grey">Politics</span>
+            </div>
+          </div>
+          <div class="pillar" style="--d: 280ms">
+            <span class="signal-circle signal-red">
+              <svg class="signal-ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="24" pathLength="100"/></svg>
+              <span class="icon icon-cart" aria-hidden="true"></span>
+            </span>
+            <p class="pillar-label">Buy less stuff</p>
+            <div class="pills">
+              <span class="pill pill-grey">Subscription traps</span>
+              <span class="pill pill-grey">Dark patterns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Closing CTA ============ -->
+    <section class="closing reveal">
+      <img class="closing-logo" src="assets/logo.png" alt="Bad Company" width="320">
+      <p class="closing-tagline">Live rating, right where you shop</p>
+      <a class="btn btn-cta btn-large js-cta" href="#" target="_blank" rel="noopener">
+        <span class="icon icon-chrome" aria-hidden="true"></span>
+        Add to Chrome <span class="cta-note">&mdash; it&rsquo;s free</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <img src="assets/logo.png" alt="Bad Company" width="130">
+      <p class="footer-tagline">Live rating, right where you shop</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="privacy.html" onclick="return false">Privacy policy</a>
+      <a href="mailto:hello@badcompany.app">Contact</a>
+    </nav>
+    <p class="footer-copyright">&copy; 2026 Bad Company</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
